@@ -1,0 +1,102 @@
+import 'dart:io';
+
+void main() {
+  double numeroUm = double.parse(stdin.readLineSync()!);
+  double numeroDois = double.parse(stdin.readLineSync()!);
+
+  void soma() {
+    print(numeroUm + numeroDois);
+  }
+
+  void substracao() {
+    print(numeroUm - numeroDois);
+  }
+
+  void divisao() {
+    print(numeroUm / numeroDois);
+  }
+
+  void multiplicacao() {
+    print(numeroUm * numeroDois);
+  }
+
+  multiplicacao();
+}
+
+void main(){
+  double numero = double.parse(stdin.readLineSync()!);
+
+  void numeroEmDobro(){
+    print(numero * 2);
+  }
+
+  numeroEmDobro();
+}
+
+ double numero = double.parse(stdin.readLineSync()!);
+  double numeroDobro = numero * 2;
+  print("O dobro do $numero é $numeroDobro");
+
+
+double idadeUm = double.parse(stdin.readLineSync()!);
+double idadeDois = double.parse(stdin.readLineSync()!);
+double idadeTres = double.parse(stdin.readLineSync()!);
+double mediaIdade = (idadeUm + idadeDois + idadeTres) / 3;
+
+print("A média das idades é $mediaIdade");
+
+var nome = stdin.readLineSync();
+var cpf = stdin.readLineSync();
+var idade = int.parse(stdin.readLineSync()!);
+var altura = double.parse(stdin.readLineSync()!);
+var pergunta = bool.parse(stdin.readLineSync()!);
+
+print("Eu sou $nome");
+print("meu CPF é $cpf");
+print("sou membro da comunidade? $pergunta");
+print("Eu tenho $altura metros de altura e $idade anos de idade");
+
+double horasTrabalhados = double.parse(stdin.readLineSync()!);
+double total = horasTrabalhados * 50;
+double totalComDesconto = total - (total * 0.05);
+
+print("O salário líquido é R\$ $totalComDesconto");
+
+ouble saldo = 1000.0; // Saldo inicial em reais
+
+void main() {
+  print('Boas-vindas ao seu banco digital!');
+  print('Seu saldo atual é de: R\$${saldo.toStringAsFixed(2)}');
+
+  print('Digite o valor do Pix que deseja realizar:');
+  double valorPix = double.parse(stdin.readLineSync()!);
+
+  saldo -= valorPix;
+
+  print('Pix realizado com sucesso!');
+  print('Seu saldo atual é de: R\$${saldo.toStringAsFixed(2)}'
+
+
+
+double pontosIniciais = 100;
+void main() {
+  print("Você tem $pontosIniciais pontos.");
+  print("Quantos pontos você gostaria de resgatar?");
+
+  double pontosRetirados = double.parse(stdin.readLineSync()!);
+
+  void substracao() {
+    double pontosRestantes = pontosIniciais - pontosRetirados;
+    print(
+      "Você resgatou $pontosRetirados pontos. Pontos restantes: $pontosRestantes.",
+    );
+  }
+
+  substracao();
+
+   print("Digite o valor total da compra");
+  double valorCompra = double.parse(stdin.readLineSync()!);
+  
+  int cupoms = (valorCompra / 50).floor();
+
+  print("Voce ganhou um total de $cupoms para esta compra");
